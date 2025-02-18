@@ -29,9 +29,15 @@ export default function Intro() {
               type: 'tween',
               duration: 0.2,
             }}
+            whileHover={{
+              rotateY: 30, // Rotates with a 3D effect
+              rotateX: 10,
+              scale: 1.1,
+              transition: { duration: 0.5 },
+            }}
           >
             <Image
-              src="https://images.unsplash.com/photo-1737071371043-761e02b1ef95?fit=crop&w=368&h=368&q=100"
+              src="/avatar.jpg" //"https://images.unsplash.com/photo-1737071371043-761e02b1ef95?fit=crop&w=368&h=368&q=100"
               alt="Oksana portrait"
               width="192"
               height="192"
@@ -42,7 +48,7 @@ export default function Intro() {
           </motion.div>
 
           <motion.span
-            className="absolute bottom-0 right-0 text-4xl"
+            className="absolute bottom-0 right-0 text-2xl"
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{
