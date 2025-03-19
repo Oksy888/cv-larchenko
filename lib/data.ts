@@ -2,9 +2,10 @@ import React from 'react'
 import { CgWorkAlt } from 'react-icons/cg'
 import { FaReact } from 'react-icons/fa'
 import { LuGraduationCap } from 'react-icons/lu'
-import corpcommentImg from '@/public/corpcomment.png'
-import rmtdevImg from '@/public/rmtdev.png'
-import wordanalyticsImg from '@/public/wordanalytics.png'
+import youTubeImg from '@/public/yt.png'
+import webSockets from '@/public/webSockets.png'
+import profile from '@/public/profile.png'
+import marvel from '@/public/marvel.png'
 
 export const links = [
   {
@@ -35,52 +36,59 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: 'Graduated bootcamp',
-    location: 'Miami, FL',
+    title: 'QA Engineer',
+    location: 'Estonia',
     description:
-      'I graduated after 6 months of studying. I immediately found a job as a front-end developer.',
+      'Ensured overall project quality by conducting thorough testing and validation. Designed and executed checklists to verify functionality, performance, and UI consistency',
     icon: React.createElement(LuGraduationCap),
     date: '2019',
   },
   {
-    title: 'Front-End Developer',
-    location: 'Orlando, FL',
+    title: 'QA and Data Analyst',
+    location: 'USA',
     description:
-      'I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.',
+      'Developed and executed comprehensive test cases to ensure the quality and functionality of web and mobile applications. Analyzed and interpreted data to identify trends and patterns, and provided insights to improve business processes.',
     icon: React.createElement(CgWorkAlt),
-    date: '2019 - 2021',
+    date: '2023',
   },
   {
-    title: 'Full-Stack Developer',
-    location: 'Houston, TX',
+    title: 'Front-End Web Developer',
+    location: 'USA',
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+      'Developed and maintained responsive web applications using React, JavaScript, and TypeScript.Implemented reusable React components to optimize performance and maintainability.Integrated state management solutions such as Zustand for efficient application state handling.',
     icon: React.createElement(FaReact),
-    date: '2021 - present',
+    date: '2023 - present',
   },
 ] as const
 
 export const projectsData = [
   {
-    title: 'CorpComment',
+    title: 'You Tube Clone',
     description:
-      'I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.',
-    tags: ['React', 'Next.js', 'MongoDB', 'Tailwind', 'Prisma'],
-    imageUrl: corpcommentImg,
+      'Practice project to clone the YouTube homepage. It has features like collapsible sidebar, responsive design, day and time formatting, using ResizeObserver for pills bar.',
+    tags: ['React', 'TypeScript', 'Tailwind', 'CSS Grid'],
+    imageUrl: youTubeImg,
   },
   {
-    title: 'rmtDev',
+    title: 'Web Sockets',
     description:
-      'Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.',
-    tags: ['React', 'TypeScript', 'Next.js', 'Tailwind', 'Redux'],
-    imageUrl: rmtdevImg,
+      'A chat app that uses web sockets to send messages in real-time. It has features like presets, message history, like/dislike of answer.',
+    tags: ['React', 'TypeScript', 'Mantine UI', 'Zustand', 'React Query'],
+    imageUrl: webSockets,
   },
   {
-    title: 'Word Analytics',
+    title: 'Profile',
     description:
-      'A public web app for quick analytics on text. It shows word count, character count and social media post limits.',
-    tags: ['React', 'Next.js', 'SQL', 'Tailwind', 'Framer'],
-    imageUrl: wordanalyticsImg,
+      'This website is built with Next.js and Tailwind. It has a dark mode, is fully responsive and is used MDX markdown for dynamic content.',
+    tags: ['React', 'Next.js', 'TypeScript', 'Tailwind', 'MDX'],
+    imageUrl: profile,
+  },
+  {
+    title: 'Marvel',
+    description:
+      'A project to practice fetching data from an API. It has features like pagination, infinity scroll and a detail page.',
+    tags: ['React', 'JS', 'SCSS'],
+    imageUrl: marvel,
   },
 ] as const
 
