@@ -4,12 +4,11 @@ import React from 'react'
 import SectionHeading from './section-heading'
 import { projectsData } from '@/lib/data'
 import Project from './project'
-import { motion, useScroll } from 'framer-motion'
 import useSectionInView from '@/lib/hooks'
 
 export default function Projects() {
   const { ref } = useSectionInView('Projects', 0.5)
-  const { scrollYProgress } = useScroll()
+  // const { scrollYProgress } = useScroll()
   return (
     <section ref={ref} id="projects" className="scroll-mt-28">
       <SectionHeading>My projects</SectionHeading>
