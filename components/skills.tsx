@@ -1,7 +1,7 @@
 'use client'
 
 import useSectionInView from '@/lib/hooks'
-import { delay, motion } from 'framer-motion'
+import { motion } from 'framer-motion'
 import React from 'react'
 import SectionHeading from './section-heading'
 import { skillsData } from '@/lib/data'
