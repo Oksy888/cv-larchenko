@@ -49,7 +49,6 @@ export default function Project({
               ))}
             </ul>
           </div>
-
           <Image
             src={imageUrl}
             alt="Project I worked on"
@@ -60,7 +59,6 @@ export default function Project({
           group-hover:-translate-x-3
           group-hover:translate-y-3
           group-hover:-rotate-2
-
           group-even:group-hover:translate-x-3
           group-even:group-hover:translate-y-3
           group-even:group-hover:rotate-2
