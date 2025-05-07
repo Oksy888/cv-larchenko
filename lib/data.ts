@@ -9,6 +9,7 @@ import marvel from '@/public/marvel.png'
 import videoImg from '@/public/video.png'
 import bpsImg from '@/public/bps.png'
 import analyticsImg from '@/public/analytics.png'
+import topImg from '@/public/top.png'
 
 export const links = [
   {
@@ -66,7 +67,15 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: 'You Tube Clone',
+    title: 'Top Charts from TikTok',
+    description:
+      'Real used project for trending sounds charts from TikTok. It has features like authentication and authorization, dark and light theme, responsive design, creating/deleting own charts, filters.',
+    tags: ['React', 'TypeScript', 'JS', 'Tailwind', 'SSR','Dynamic Routes','Intercepting Routes', 'Zustand', 'React Query'],
+    imageUrl: topImg,
+    link: 'https://top-charts-five.vercel.app/',
+  },
+  {
+    title: 'YouTube Clone',
     description:
       'Practice project to clone the YouTube homepage. It has features like collapsible sidebar, responsive design, day and time formatting, using ResizeObserver for pills bar.',
     tags: ['React', 'TypeScript', 'JS', 'Tailwind', 'CSS Grid'],
