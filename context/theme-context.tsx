@@ -3,7 +3,7 @@
 import React, {
   createContext,
   PropsWithChildren,
-  useContext,
+  use,
   useEffect,
   useState,
 } from 'react'
@@ -43,15 +43,11 @@ export const ThemeProvider = ({ children }: PropsWithChildren) => {
     }
   }, [])
 
-  return (
-    <ThemeContext.Provider value={{ theme, toggleTheme }}>
-      {children}
-    </ThemeContext.Provider>
-  )
+  return <ThemeContext value={{ theme, toggleTheme }}>{children}</ThemeContext>
 }
 
 export function useTheme() {
-  const context = useContext(ThemeContext)
+  const context = use(ThemeContext)
 
   if (context === null) {
     throw new Error('useTheme must be used within ThemeProvider')

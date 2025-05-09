@@ -4,6 +4,7 @@ import { SectionName } from '@/lib/types'
 import React, {
   createContext,
   PropsWithChildren,
+  use,
   useContext,
   useState,
 } from 'react'
@@ -25,7 +26,7 @@ export default function ActiveSectionContextProvider({
   const [timeOfLastClick, setTimeOfLastClick] = useState(0) // we need to keep track of this to disable the observer temporarily when user clicks on a link
 
   return (
-    <ActiveSectionContext.Provider
+    <ActiveSectionContext
       value={{
         activeSection,
         setActiveSection,
@@ -34,12 +35,12 @@ export default function ActiveSectionContextProvider({
       }}
     >
       {children}
-    </ActiveSectionContext.Provider>
+    </ActiveSectionContext>
   )
 }
 
 export const useActiveSectionContext = () => {
-  const context = useContext(ActiveSectionContext)
+  const context = use(ActiveSectionContext)
   if (context === null) {
     throw new Error(
       'ActiveSectionContext must be used within ActiveSectionContextProvider'
