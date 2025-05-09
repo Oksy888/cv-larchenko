@@ -70,7 +70,7 @@ export default function Intro() {
       >
         <span className="font-bold">Hello, I&apos;m Oksana!</span> I&apos;m a{' '}
         <span className="font-bold">front-end web developer</span> with{' '}
-        <span className="font-bold">2 years</span> of experience. I enjoy
+        <span className="font-bold">3 years</span> of experience. I enjoy
         building <span className="italic">responsive and functional sites</span>
         . My focus is <span className="underline">React and Next.js</span>.
       </motion.h1>
